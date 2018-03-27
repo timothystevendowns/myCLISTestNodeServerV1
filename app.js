@@ -22,6 +22,10 @@ app.set('json spaces', 40);
 app.use(bodyParser.urlencoded({ extend: false }))
 app.use(bodyParser.json())
 
+//set routs
+var students = require('./routs/students.js');
+app.use('/students',students);
+
 // start server
 var port = 3002
 app.listen(port, function(){
