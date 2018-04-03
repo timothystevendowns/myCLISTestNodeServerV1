@@ -17,4 +17,4 @@ var studentSchema = mongoose.Schema({
   }
 });
 
-var Sudent = module.exports = mongoose.model("Student", studentSchema);
+var student = module.exports = mongoose.model("Student", studentSchema);

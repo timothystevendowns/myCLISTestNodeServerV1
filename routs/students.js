@@ -6,9 +6,9 @@ var student = require('../models/student.js');
 
 //get pages
 router.get('/', function(req, res){
-  Student.find({}, function(err, students) {
+  student.find({}, function(err, students) {
     if(err) console.log(err)
-    res.json(pages);
+    res.json(students);
   });
 });
 
